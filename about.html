@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+
+        <title>Holli Hamby Portfolio | About</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon-holli.ico">
+    </head>
+    <body>
+        <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light customNav">
+        <a class="navbar-brand" href="index.html"><img src="images/logo-name.svg" alt="Holli Hamby logo" width="auto" height="63px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">WORK<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active nav-border">
+              <a class="nav-link" href="about.html">ABOUT</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="pdfs/hhamby-resume-2020-placeholder.pdf" target="_blank">RESUME</a>
+            </li>
+           </ul>
+        </div>
+    </nav>
+      <!-- End navigation bar -->
+
+        <section class="about">
+            <div class="about-content">
+                <img id="holli-pic" src="images/holli-hamby.png" alt="Holli Hamby">
+                <div class="about2"><h1>About Me</h1>
+                <p>As a recent graduate of Georgia Tech's UX/UI Boot Camp, I gained immersive experience in tackling complex projects, mastering the theories and tools utilized by contemporary designers, and implementing user-centered design to create compelling designs and user experiences.</p>
+                <p>I bring with me 15 years of expertise in web content management and digital design, fueling my passion for creating designs that people can truly engage with and appreciate.</p>
+                <p>Outside of work, you can find me enjoying quality time with my loved ones, including my doggo Hank. As an admirer of light and nature, I relish the moments when they converge to create uplifting experiences.</p>
+                <br>
+                <a target="_blank" href="pdfs/hhamby-resume-2020-placeholder.pdf"><button>View Resume</button></a>
+                </div>
+            </div>
+        </section>
+        <section class="skills">
+            <div class="skills-row">
+                <div class="tools-column">
+                <h3>TOOLS</h3>
+                <p class="hanken-grotesk-med">Figma<br>
+                    InVision<br>
+                    Adobe Creative Suite<br>
+                    Miro<br>
+                    Adobe XD<br>
+                    Google Drive<br>
+                    Zoom<br>
+                    Teams
+                </p>
+                </div>
+                <div class="ux-skillset-column">
+                    <h3>UX SKILLSET</h3>
+                    <p class="hanken-grotesk-med">User Centered Design<br>
+                    User Research<br>
+                    Information Architecture<br>
+                    Interactive Prototyping<br>
+                    Wireframing<br>
+                    User Testing<br>
+                    Project Management<br>
+                    Agile Methodology<br>
+                    Branding & Logo Design
+                </p>
+                </div>
+                <div class="contact-column">
+                    <h3>CONTACT</h3>
+                    <p class="hanken-grotesk-med"><strong>Email</strong>
+                    <br>
+                    <a href="mailto:hollihamby@gmail.com">hollihamby@gmail.com</a>
+                    </p>
+                    <p class="hanken-grotesk-med"><strong>LinkedIn</strong>
+                    <br>
+                    <a href="https://www.linkedin.com/in/hollihamby">@hollihamby</a>
+                </p>
+                </div>
+            </div>
+        </section>
+        <section class="photography-site">
+                <img src="images/icon-camera.svg" alt="camera"/>
+                <h5 class="heading5">Did I mention I have a passion for photography too?</h5>
+                <button type="button" onclick="window.open('https://www.hollihambyphotography.com/', '_blank')">View Site</button>
+            </section>
+        <footer>
+            <img src="images/logo-initials.svg" alt="Holli Hamby"/>
+            <h3 class="white-text">Let's connect</h3>
+            <div class="connect-icons">
+                <a href="mailto:hollihamby@gmail.com" ><img src="images/icon-email-envelope.svg" ></a>
+                <a href="https://www.linkedin.com/in/hollihamby"><img src="images/icon-linkedin.svg" alt="Connect on LinkedIn"/></a>
+            <br>
+            </div>
+        </footer>
+        <footer class="footer-copyright-section"
+            <p class="footer-copyright">© Holli Hamby - All Rights Reserved</p>
+    </body>
+    <script>
+        // Create a media condition that targets viewports at least 768px wide
+        const mediaQuery = window.matchMedia('(max-width: 600px)')
+        // Check if the media query is true
+        if (mediaQuery.matches) {
+            // Then trigger an alert
+            document.getElementById("logo-image").src = "images/logo-initials.svg";
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+    <button id="backToTop" onclick="scrollToTop()">Top</button>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+        
+        <title>Holli Hamby Portfolio | Home</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon-holli.ico">
+    </head>
+    <body>
+
+      <!-- Navigation bar -->
+         <nav class="navbar navbar-expand-lg navbar-light bg-light customNav">
+          <a class="navbar-brand" href="index.html"><img src="images/logo-name.svg" alt="Holli Hamby logo" width="auto" height="63px"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active nav-border">
+                <a class="nav-link" href="index.html">WORK <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pdfs/hhamby-resume-2020-placeholder.pdf" target="_blank">RESUME</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      <!-- End navigation bar -->
+    
+      <!-- Jumbotron -->
+    <section id="hero">
+      <div class="jumbotron hero-image">
+        <div class="hero-text">
+          <h1 class="white-text">Hi, I'm Holli with an i.</h1>
+          <h3 class="white-text">As a UX/UI Designer, I am driven by a passion for crafting exceptional digital experiences that are both intuitive and impactful.</h3>
+          <br>
+          <a href="about.html"><button>Tell me more</button></a>
+        </div>
+      <div class="arrow"><img class="bounceMe" src="images/arrow-down.svg"></div> 
+      </div>
+    </section>  
+      <!-- End jumbotron -->
+      
+
+    <section id="work">
+    <h1>Featured Work</h1>
+    <div class="work-grid">
+        <div class="case-study">
+        <div class="case-study-image"><img src="images/fcc-case-study.png" alt="FCC Website Redesign" max width="500px"></div>
+        <div class="case-study-content"><h2>Federal Communications Commission Website Redesign</h2>
+            <p>A redesign process that involved assessing the existing usability issues, conducting user research, and analyzing competing resources.</p>
+            <a href="case-study-fcc.html"><button>Go to Case Study</button></a>
+            </div>
+        </div>
+        <div class="case-study-rev">
+        <div class="case-study-image-rev"><img src="images/sent-it-case-study.png" alt="SentIt Mobile App" width="500px"></div>
+        <div class="case-study-content-rev"><h2>SentIt Mobile App</h2>
+            <p>App that helps users remember special occasions and saves time with planning and organization tools.</p>
+            <button>Coming Soon</button>
+            </div>
+        </div>
+        <div class="case-study">
+        <div class="case-study-image"><img src="images/travelpeep-case-study.png" alt="TravelPeep Mobile App" width="500px"></div>
+        <div class="case-study-content"><h2>TravelPeep Mobile App</h2>
+            <p>A travel app that provides visual transparency from real travelers' experiences around the world through media sharing.</p>
+            <button>Coming Soon</button>
+            </div>
+        </div>
+    </div>
+</section>
+            <footer>
+            <img src="images/logo-initials.svg" alt="Holli Hamby"/>
+            <h3 class="white-text">Let's connect</h3>
+            <div class="connect-icons">
+                <a href="mailto:hollihamby@gmail.com" ><img src="images/icon-email-envelope.svg" ></a>
+                <a href="https://www.linkedin.com/in/hollihamby"><img src="images/icon-linkedin.svg" alt="Connect on LinkedIn"/></a>
+            <br>
+            </div>
+        </footer>
+        <footer class="footer-copyright-section"
+            <p class="footer-copyright">© Holli Hamby - All Rights Reserved</p>
+    <script>
+        // Create a media condition that targets viewports at least 768px wide
+        const mediaQuery = window.matchMedia('(max-width: 600px)')
+        // Check if the media query is true
+        if (mediaQuery.matches) {
+            // Then trigger an alert
+            document.getElementById("logo-image").src = "images/logo-initials.svg";
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+    <button id="backToTop" onclick="scrollToTop()">Top</button> 
+    </body>
+</html>
